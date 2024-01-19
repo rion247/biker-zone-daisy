@@ -14,6 +14,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'bike-primary-bg': '#e76F51',
+                'text-color-primary': '#e76F51',
               }
             }
           }
@@ -30,12 +32,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <style>
+
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .font-inter{
+            font-family: 'Inter', sans-serif;
+        }
+
+    </style>
+
 </head>
-<body>
 
-    <header>
 
-        
+<body class="font-poppins">
+
+    <header class="container mx-auto">
+
+        <!-- navbar section  -->
+        <nav class="my-14">
+            
+            <div class="navbar bg-bike-primary w-auto">
+                <!-- small device  -->
+                <div class="flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn text-4xl">Biker<span class="text-text-color-primary">Zone BD</span></a>
+                </div>
+
+                <!-- large device  -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base">
+                    <li><a>Home</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>News</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+
+                <!-- button section  -->
+                <div class="w-auto ml-12">
+                  <a class="btn bg-bike-primary-bg py-2.5 px-12 text-white font-bold text-xl">Login</a>
+                </div>
+            
+            </div>
+
+        </nav>
+
+
 
     </header>
 
